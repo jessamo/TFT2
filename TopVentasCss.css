@@ -1,0 +1,82 @@
+.Titulo {
+    text-align: center;
+    font-size: 3em;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semi-transparente */
+    padding: 20px;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "Rubik Spray Paint", serif; 
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(ferrari.gif);
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Hace que la imagen de fondo se mantenga fija */
+    margin: 0;
+    padding: 0;
+}
+
+.car-container1, .car-container2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.car1, .car2, .car3, .car4, .car5, .car6 {
+    border: 2px solid #87CEEB;
+    border-radius: 10px;
+    padding: 15px;
+    width: 400px; /* Aumenta el ancho del contenedor */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent; /* Fondo transparente por defecto */
+    transition: background-color 0.3s;
+}
+
+/* Asegurar que la imagen ocupa el espacio sin afectar el hover */
+.car1 img, .car2 img, .car3 img, .car4 img, .car5 img, .car6 img {
+    max-width: 100%; /* Mantiene el ancho dentro del contenedor */
+    height: 350px; /* Aumenta la altura para hacerlas más grandes */
+    border-radius: 10px;
+    transition: transform 0.3s;
+    object-fit: cover; /* Evita deformaciones y recorta si es necesario */
+}
+
+/* Ocultar el texto por defecto */
+.car1 p, .car2 p, .car3 p, .car4 p, .car5 p, .car6 p {
+    opacity: 0;
+    transition: opacity 0.3s, max-height 0.3s;
+    max-height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Mostrar el texto y el fondo al pasar el ratón */
+.car1:hover, .car2:hover, .car3:hover, .car4:hover, .car5:hover, .car6:hover {
+    background-color: #92e3db; /* Fondo de color al pasar el ratón */
+}
+
+.car1:hover p, .car2:hover p, .car3:hover p, .car4:hover p, .car5:hover p, .car6:hover p {
+    opacity: 1;
+    max-height: 120px; /* Espacio suficiente para el texto */
+    padding: 10px;
+}
+
+/* Evitar que el enlace afecte el diseño */
+.car1 a, .car2 a, .car3 a, .car4 a, .car5 a, .car6 a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
