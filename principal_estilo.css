@@ -80,7 +80,7 @@ body {
     text-align: center;
     height: 100vh; /* Ocupar toda la pantalla */
     font-size: larger;
-    background-image: url("nsx-honda.gif"); /* Gif como fondo de pantalla */
+    background-image: url("Principal_img/nsx-honda.gif"); /* Gif como fondo de pantalla */
     background-size: cover; /* Ajusta el tamaño del GIF */
     background-position: center; /* Centrar el GIF */
     background-repeat: no-repeat; /* Evitar que se repita */

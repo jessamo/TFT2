@@ -72,14 +72,13 @@ body {
 }
 
 
-
-
-
+/* Contenedor principal del menú de coches históricos */
 #menu_ch{
     background-color: #778899; 
     min-height: 100vh; /* Mínimo el 100% de la altura de la pantalla */
 }
 
+/* Contenedor de las imágenes de los coches */
 .imagenes_ch {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 3 columnas iguales */
@@ -91,6 +90,7 @@ body {
 
 }
 
+/* Estilos para las imágenes dentro de la cuadrícula */
 .imagenes_ch img {
     width: 100%; /* Ajusta el ancho al contenedor */
     max-width: 300px; /* Tamaño máximo para uniformidad */
@@ -100,18 +100,18 @@ body {
     transition: transform 0.3s ease-in-out; /* Suaviza la animación */
 }
 
+/* Contenedor de la información del producto (nombre, precio, botón de compra) */
 .info_producto{
     padding: 12 0 12 0;
 
 }
 
+/* Contenedor individual para cada coche */
 .ficha_coche{
     background-color: grey;
     border-radius: 10px;
 
 }
-
-
 
 
 /* Estilos para el footer */
@@ -134,10 +134,9 @@ footer {
     transform: scale(1.1); /* Hace que crezca un poco */
 }
 
+/* Efecto al pasar el cursor sobre las imágenes */
 .imagenes_ch img:hover{
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.548);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.548); /* Agrega una sombra para resaltar la imagen */
+    transform: scale(1.1); /* Aumenta el tamaño */
 }
 
-.imagenes_ch img:hover {
-    transform: scale(1.1); /* Aumenta el tamaño en un 10% */
-}
