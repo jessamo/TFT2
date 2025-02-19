@@ -2,6 +2,7 @@
 
 * {
     font-family: "Be Vietnam Pro", serif;
+    overflow: hidden;
 }
 
 h1 span {
@@ -9,78 +10,94 @@ h1 span {
 }
 
 .Titulo {
-    text-align: center; /* Centra el texto */
-    font-size: 3em; /* Tamaño de fuente grande */
-    color: #fff; /* Color de texto blanco */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semi-transparente */
-    padding: 20px; /* Espaciado interno de 20px */
-    margin: 0; /* Sin margen */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor del elemento */
-    text-transform: uppercase; /* Convierte el texto a mayúsculas */
-    letter-spacing: 2px; /* Espaciado entre letras */
-    font-weight: 500; /* Grosor de fuente medio */
-    font-style: normal; /* Estilo de fuente normal */
+    text-align: center;
+    font-size: 3em;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-style: normal;
 }
 
 body {
     background-color: rgb(39, 37, 37);
-    background-size: cover; /* La imagen cubre toda la pantalla */
-    background-repeat: no-repeat; /* La imagen no se repite */
-    background-attachment: fixed; /* La imagen de fondo se mantiene fija */
-    margin: 0; /* Sin margen */
-    padding: 0; /* Sin relleno */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
 }
 
 .car-container1, .car-container2 {
-    display: flex; /* Usa flexbox para el diseño */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    gap: 20px; /* Espacio entre elementos */
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
-    padding: 20px; /* Espaciado interno de 20px */
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Reduce the gap between containers */
+    flex-wrap: wrap;
+    padding: 5px; /* Reduce the padding */
 }
 
 .car1, .car2, .car3, .car4, .car5, .car6 {
-    border: 2px solid #87CEEB; /* Borde azul claro */
-    border-radius: 10px; /* Bordes redondeados */
-    padding: 15px; /* Espaciado interno de 15px */
-    width: 400px; /* Ancho del contenedor */
-    text-align: center; /* Centra el texto */
-    position: relative; /* Posicionamiento relativo */
-    overflow: hidden; /* Oculta el desbordamiento */
-    background-color: transparent; /* Fondo transparente */
-    transition: background-color 0.3s; /* Transición suave para el fondo */
+    --b: 4px;
+    --l: #0000 0% 70%, #0000ff7f;
+    --f: url(#glow-0);
+    border: solid var(--b) #0000;
+    border-radius: calc(2*var(--b));
+    padding: 10px; /* Reduce the padding */
+    width: 250px; /* Reduce the width */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    background: 
+        repeating-conic-gradient(from var(--a, 0deg), 
+                var(--l, #0000 0% 70%, #0000ff7f)) border-box;
+    filter: var(--f, url(#glow-0));
+    animation: a 2s linear infinite;
 }
 
+@property --a {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes a { to { --a: 1turn } }
+
 .car1 img, .car2 img, .car3 img, .car4 img, .car5 img, .car6 img {
-    max-width: 100%; /* Ancho máximo del 100% del contenedor */
-    height: 350px; /* Altura fija de 350px */
-    border-radius: 10px; /* Bordes redondeados */
-    transition: transform 0.3s; /* Transición suave para la transformación */
-    object-fit: cover; /* Ajusta la imagen sin deformarla */
+    box-sizing: border-box;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .car1 p, .car2 p, .car3 p, .car4 p, .car5 p, .car6 p {
-    opacity: 0; /* Oculta el texto por defecto */
-    transition: opacity 0.3s, max-height 0.3s; /* Transición suave para la opacidad y altura */
-    max-height: 0; /* Altura máxima de 0 */
-    overflow: hidden; /* Oculta el desbordamiento */
-    margin: 0; /* Sin margen */
-    padding: 0; /* Sin relleno */
+    opacity: 0;
+    transition: opacity 0.3s, max-height 0.3s;
+    max-height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .car1:hover, .car2:hover, .car3:hover, .car4:hover, .car5:hover, .car6:hover {
-    background-color: #92e3db; /* Fondo de color al pasar el ratón */
+    background-color: #92e3db;
 }
 
 .car1:hover p, .car2:hover p, .car3:hover p, .car4:hover p, .car5:hover p, .car6:hover p {
-    opacity: 1; /* Muestra el texto */
-    max-height: 500px; /* Altura suficiente para el texto */
-    padding: 10px; /* Espaciado interno de 10px */
+    opacity: 1;
+    max-height: 500px;
+    padding: 10px;
 }
 
 .car1 a, .car2 a, .car3 a, .car4 a, .car5 a, .car6 a {
-    text-decoration: none; /* Sin subrayado en los enlaces */
-    color: inherit; /* Hereda el color del texto */
-    display: block; /* El enlace se muestra como un bloque */
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
