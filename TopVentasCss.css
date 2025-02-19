@@ -2,6 +2,9 @@
 
 * {
     font-family: "Be Vietnam Pro", serif;
+}
+
+h1 span {
     color: #00BFFF;
 }
 
@@ -21,7 +24,6 @@
 }
 
 body {
-    font-family: Arial, sans-serif; /* Fuente Arial */
     background-color: rgb(39, 37, 37);
     background-size: cover; /* La imagen cubre toda la pantalla */
     background-repeat: no-repeat; /* La imagen no se repite */
