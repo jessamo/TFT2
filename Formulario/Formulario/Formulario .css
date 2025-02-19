@@ -1,0 +1,115 @@
+*{      /* Afecta a todo */
+    box-sizing: border-box;     /* Padding y border dependen del width y height */
+}
+
+body{
+    background: black;
+    color: white;
+    padding-top: 0;           /* em es una unidad relaticva al tamaño de la letra */
+    padding-right: 4rem;
+    padding-bottom: 0;
+    padding-left: 4rem;
+}
+
+.ContenidoTotal{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+.TituloForm{
+    text-align: center;
+    font-size: 3em;
+}
+
+.TituloForm span{
+    color: deepskyblue;
+}
+
+.ContenidoForm{
+    box-shadow: 0 0 20px 0 deepskyblue;  /* desplazX desplazY desenfoque expansión color; */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.ContenidoForm > * {        /* Solo afecta a los hijos directos */
+    padding: 2em;
+}
+
+textarea{
+    resize: none;   /* Para que no se pueda redimensionar */
+    height: calc(1.5em * 8);
+}
+
+.InputsForm{
+    background-color: rgb(49, 48, 48);
+}
+
+.InputsForm form{
+    display: grid;  /* Para que se divida en cuadrículas */
+    grid-template-columns: 1fr 1fr; /* Se divide en dos fracciones */
+}
+
+.InputsForm form .ParteInferior{
+    grid-column: 1 / 3;   /* Columna desde donde empieza hasta la que llega, sin incluir */
+}
+
+.InputsForm form p {  /* Solo a los elementos p del form */
+    margin: 0;
+    padding: 1em;
+}
+
+.InputsForm button,
+.InputsForm input,
+.InputsForm textarea{
+    width: 100%;
+    padding: .7em;
+    color: white;   /* De escritura */
+    border: none;       /* Para que no se vean las "cajas" */
+    background: none;
+    border-bottom: 1px solid deepskyblue;  /* Solo la línea de abajo */
+    outline: none;      /* Para que no se vean las cajas tampoco al clicar */
+}
+
+.InputsForm form button{     /* Reglas a mayores para el botón */
+    background-color: deepskyblue;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    color: black;
+}
+
+.InputsForm form button:hover,
+.InputsForm form button:focus{
+    background-color: rgb(6, 101, 101);
+    color: bisque;
+    transition: 0.2s;
+    outline: 0;
+    cursor: pointer;
+}
+
+.InfoForm{
+    background-color: black;
+    text-align: center;
+}
+
+.InfoForm h4,
+.InfoForm ul,
+.InfoForm p{
+    padding: 1em;
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.InfoForm ul{
+    list-style: none;
+    padding: 0;
+}
+
+.InfoForm ul{
+    padding: 0.3em;
+}
+
+
+/* Falta ordenar en partes con un título en comentario */

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!-- Animaciones -->
+    <script src="https://kit.fontawesome.com/ba41d7ce0a.js" crossorigin="anonymous"></script>   <!--Font awesome para emoticonos-->
+    <link rel="stylesheet" href="Formulario .css">
+</head>
+<body>
+    
+    <div class="ContenidoTotal">
+
+        <h1 class="TituloForm">Contacte con AUTO<span>DAM</span></h1>     <!--Separado para dos colores-->
+            
+            <div class="ContenidoForm">
+
+                <div class="InputsForm">                                     <!-- Faltan validaciones -->
+                    <h1>Formulario de contacto</h1>
+                    <form action="" method="post">
+                        <p>
+                            <label for="NombreCompleto">Nombre Completo:</label>
+                            <input type="text"  name="NombreCompleto" id="NombreCompleto">
+                        </p>
+                        <p>
+                            <label for="CorreoContacto">Correo electrónico:</label>
+                            <input type="email" name="CorreoContacto" id="CorreoContacto">
+                        </p>
+                        <p>
+                            <label for="TelContacto">Teléfono de contacto:</label>
+                            <input type="tel" name="TelContacto" id="TelContacto">
+                        </p>
+                        <p>
+                            <label for="AsuntoForm">Asunto:</label>
+                            <input type="text" name="AsuntoForm" id="AsuntoForm">
+                        </p>
+                        <p class="ParteInferior">
+                            <label for="TextoForm">Detalles de su consulta:</label>
+                            <textarea name="TextoForm" id="TextoForm" rows="3"></textarea>
+                        </p>
+                        <p class="ParteInferior">
+                            <button type="submit">
+                                Enviar
+                            </button>
+                        </p>    
+                    </form>
+                </div>
+    
+                <div class="InfoForm">      <!-- Parte derecha -->
+                    <h1>Información adicional:</h1>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>    <!-- Habrá que cambiar los colores de los emotis importandolos de nuevo -->
+                            <p>Valladolid, C. del Arca Real 146.</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+64 608 99 02 20</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>info@fpsafavalladolid.com</p>
+                        </li>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt ex inventore libero, 
+                            accusantium illum ducimus eum veritatis et aspernatur, debitis in laborum ipsa soluta, 
+                            eligendi cum tenetur autem labore fugit.</p>
+                        <p>Texto final</p>
+                    </ul>
+                </div>
+
+            </div>   
+
+    </div>
+
+</body>
+</html>

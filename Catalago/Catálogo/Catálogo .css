@@ -1,0 +1,107 @@
+/* Generales */
+*::after, 
+*::before,      /* Se aplica tanto before como after */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ancho y alto de un elemento incluyan padding y borde */
+}
+
+/* Pruebas de color y otros */
+*{
+    background-color: rgb(39, 37, 37);
+}
+
+body{
+    margin: 0 auto; /* Para que solo se centre de forma horizontal */
+    max-width: 1200px;
+    color: black;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    color: deepskyblue;
+}
+
+.i{ /* Carrito */
+    width: 40px;
+    height: 40px;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+
+img{
+    max-width: 100%;    /* Para que no se desborde */
+    cursor: pointer;
+}
+
+.Contenedor-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;  /* Separación */
+}
+
+.item{
+    border-radius: 10px;
+    overflow: hidden;   /* Para que nada sobresalga, ni al hacer hover */
+}
+
+.item:hover{
+    box-shadow: 0 5px 20px deepskyblue;  /* Sombra al pasar cursor */
+}
+
+.item:hover img{
+    transform: scale(1.2);
+    transition: all .9s;
+}
+
+.item figure{
+    overflow: hidden; /* Todo lo que se salga del contenedor: hidden */
+    background-color:silver;
+}
+
+.item img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover; /* Se ajusta aunque pierda info en los bordes */
+    border-radius: 10px 10px 0 0;   /* Solo bordes superiores */
+}
+
+.InfoP{
+    text-align: center;
+    height: 140px;
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;  /* Espacio entre líneas */
+    background-color:silver;
+}
+
+.InfoP h2{
+    background: transparent;    
+}
+
+.Descripcion{    /* Ensanchar */
+    background: transparent;
+    font-size: 1.1em;
+    font-weight: 900;
+}
+
+.InfoP button{
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.InfoP button:hover{
+    background-color:rgb(94, 134, 187);
+    transition: 0.3s;
+}

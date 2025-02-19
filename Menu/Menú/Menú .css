@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    background-color: black;
+}
+
+.slidebar{
+    width: 250px;
+    background-color: rgb(39, 37, 37);
+    height: 100vh;
+    padding: 20px 10px;
+    box-shadow: 4px 0 5px deepskyblue;
+    overflow-x: hidden;
+    transition: transform 0.3s; /* Cuando se aplique transform */
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.tituloMenu{
+    color: antiquewhite;
+    text-transform: uppercase;  /* No mg */
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+.menu{
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    padding: 10px 8px;
+    border-radius: 8px;
+    transition: background 0.3s;    /* Cuando se cambie el background */
+}
+
+.menu li a:hover{
+    background-color: grey;
+}
+
+li i{  /* Emotis */ 
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.texto{
+    flex-grow: 1;   /* Para que ocupe todo el espacio disponible en el eje x sin aumentar el tamaño (1) */
+}
+
+.simbolito{
+    background-color: red;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+}
+
+.drop-downContenido{    /* Desplegable */
+    display: none;  /* No aparece el desplegable de primeras */
+    padding-left: 35px;
+    list-style-type: none;
+}
+
+.drop-downContenido li a{   /* Enlaces dentro del desplegable */
+    padding: 8px 10px;
+    font-size: 14px;
+    color: rgb(220, 219, 219);
+    display: flex;
+    align-items: center;
+}
+
+.drop-downContenido li a:hover{
+    color: white;
+}
+
+.drop-down:hover .drop-downContenido{   /* Haciendo hover en 1, se aplica a 2 */
+    display: block; /* Lo transforma en bloques */
+}
+
