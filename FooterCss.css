@@ -6,7 +6,7 @@
 }
 
 footer {
-    background: #2c3e50; /* Fondo azul grisáceo */
+    background: #2c3e50;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -14,13 +14,13 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: auto; /* Se ajusta automáticamente */
+    height: auto;
     border-top: 3px solid #34495e;
 }
 
 .footer-content {
     display: flex;
-    justify-content: center; /* Centra los elementos hijos */
+    justify-content: center;
     align-items: center;
     max-width: 2100px;
     margin: auto;
@@ -37,15 +37,22 @@ footer {
 
 /* Logo en el centro */
 .footer-logo {
-    flex: 0 1 auto; /* Ajusta el tamaño del logo */
+    flex: 0 1 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .footer-logo img {
-    max-width: 150px; /* Ajusta el tamaño del logo */
+    max-width: 150px;
     height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Solo cuando el ratón está encima */
+.footer-logo img:hover {
+    transform: scale(1.2); /* Aumenta el tamaño del logo */
 }
 
 /* Redes sociales y formulario de contacto */
