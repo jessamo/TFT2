@@ -7,8 +7,6 @@
     box-sizing: border-box; /* Ancho y alto de un elemento incluyan padding y borde */
 }
 
-/* Pruebas de color y otros */
-
 body{
     margin: 0 auto; /* Para que solo se centre de forma horizontal */
     max-width: 1200px;

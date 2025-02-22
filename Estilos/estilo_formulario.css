@@ -82,7 +82,7 @@ textarea{
 
 .InputsForm form button:hover,
 .InputsForm form button:focus{
-    background-color: rgb(6, 101, 101);
+    background-color:cornflowerblue;
     color: bisque;
     transition: 0.2s;
     outline: 0;
@@ -98,8 +98,17 @@ textarea{
 .InfoForm ul,
 .InfoForm p{
     padding: 1em;
-    text-align: center;
+    text-align: justify center;
     margin: 0 0 1rem 0;
+}
+
+.InfoForm a{
+    text-decoration: none;
+    color: darkgray; /* El de su padre */
+}
+
+.InfoForm a:hover{      /* Enlaces */
+    color: deepskyblue;
 }
 
 .InfoForm ul{
