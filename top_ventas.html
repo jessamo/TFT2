@@ -2,29 +2,43 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>TopVentas</title>
-    <link rel="stylesheet" href="TopVentasCss.css">
+    <title>Top Ventas</title>
+    <link rel="stylesheet"   href="Estilos/estilo_general.css">
+    <link rel="stylesheet"   href="Estilos/estilo_menu_superior.css">
+    <link rel="stylesheet"   href="Estilos/estilo_footer.css">
+    <link rel="stylesheet" href="Estilos/estilo_top_ventas.css">
 </head>
 <body>
-    <h1 class="Titulo">Top <span>Ventas</span></h1>
-    
+    <header>
+        <!--Según se vayan haciendo, cada div contendría el enlace para acceder a la página correspondiente-->
+        <nav id="menu_principal">
+            <ul id="menu_superior ">
+                <li class="indices_laterales"><a href="coches_historicos.html" title="Coches Históricos" target="_blank">Coches históricos</a></li>
+                <li class="indices_laterales"><a href="top_ventas.html" title="Top Ventas" target="_blank">Top ventas</a></li>
+                <li id="indice_central"><a href="index.html" title="Menú Principal" target="_self"><img src="Imagenes\Principal_img\Logo_def.png" alt="Logo AutoDam"></a></li>
+                <li class="indices_laterales"><a href="#">Los más deseados</a></li>
+                <li class="indices_laterales"><a href="miembros_premium.html" title="Miembros Premium" target="_blank">Miembros premium</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <!-- Contenedor de los 3 primeros coches en la primera fila -->
     <div class="car-container1">
         <div class="car1">
             <a href="car1.html">
-                <img src="Coche1.jpg" alt="Coche 1">
+                <img src="Imagenes/Top_ventas_img/Coche1.jpg" alt="Coche 1">
                 <p>El Volkswagen Golf es un modelo de automóvil compacto producido por el fabricante alemán Volkswagen desde 1974. Es uno de los modelos más icónicos y exitosos de la marca. </p>
             </a>
         </div>
         <div class="car2">
             <a href="car2.html">
-                <img src="Coche2.jpg" alt="Coche 2">
+                <img src="Imagenes/Top_ventas_img/Coche2.jpg" alt="Coche 2">
                 <p>El SEAT León es un automóvil compacto que ha ganado popularidad desde su lanzamiento en 1999.</p>
             </a>
         </div>
         <div class="car3">
             <a href="car3.html">
-                <img src="Coche3.jpg" alt="Coche 3">
+                <img src="Imagenes/Top_ventas_img/Coche3.jpg" alt="Coche 3">
                 <p>El Ferrari Purosangue es el primer SUV de lujo de la marca italiana Ferrari, lanzado en 2022. Con un diseño elegante y deportivo, el Purosangue combina la esencia de un superdeportivo con las características de un SUV, ofreciendo un alto rendimiento y lujo.</p>
             </a>
         </div>
@@ -36,22 +50,29 @@
     <div class="car-container2">
         <div class="car4">
             <a href="car4.html">
-                <img src="Coche4.jpg" alt="Coche 4">
+                <img src="Imagenes/Top_ventas_img/Coche4.jpg" alt="Coche 4">
                 <p>El Renault Clio es un automóvil producido por la marca francesa Renault. A lo largo de sus generaciones, el Clio ha sido conocido por su versatilidad, diseño atractivo y eficiencia, convirtiéndose en uno de los modelos más populares de Renault, especialmente en Europa.</p>
             </a>
         </div>
         <div class="car5">
             <a href="car5.html">
-                <img src="Coche5.jpg" alt="Coche 5">
+                <img src="Imagenes/Top_ventas_img/Coche5.jpg" alt="Coche 5">
                 <p>El Peugeot 208 es un automóvil subcompacto producido por el fabricante francés Peugeot desde 2012. Con un diseño moderno y dinámico, el 208 ha sido uno de los modelos más exitosos de la marca, destacándose por su estilo, tecnología y eficiencia.</p>
             </a>
         </div>
         <div class="car6">
             <a href="car6.html">
-                <img src="Coche6.jpg" alt="Coche 6">
+                <img src="Imagenes/Top_ventas_img/Coche6.jpg" alt="Coche 6">
                 <p>El Tesla Model 3 es un automóvil eléctrico de gama media producido por la marca Tesla. Lanzado en 2017, el Model 3 es uno de los modelos más populares de Tesla debido a su combinación de rendimiento, autonomía y accesibilidad en comparación con otros vehículos eléctricos de lujo.</p>
             </a>
         </div>
     </div>
+
+    <footer>
+        <div class="pie-pagina">
+            <p>Estamos en: SAFA Tech Valladolid - Aula 11</p>
+            <p><a href="formulario.html" title="Formulario de Contacto" target="_blank">Contacta con nosotros</a></p>
+        </div>    
+    </footer>
 </body>
 </html>

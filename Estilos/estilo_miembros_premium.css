@@ -8,29 +8,11 @@
 }
 
 /* Pruebas de color y otros */
-*{
-    background-color: rgb(39, 37, 37);
-}
 
 body{
     margin: 0 auto; /* Para que solo se centre de forma horizontal */
     max-width: 1200px;
     color: black;
-}
-
-/* ------------------------------------------------------------------------------------------------- */
-
-/* Header */
-header{
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-    color: deepskyblue;
-}
-
-.i{ /* Carrito */
-    width: 40px;
-    height: 40px;
 }
 
 /* ------------------------------------------------------------------------------------------------- */
@@ -41,6 +23,8 @@ img{
 }
 
 .Contenedor-items{
+    padding-top: 140px;     /*Relleno para no solaparse con el menú superior*/
+    padding-bottom: 80px;   /*Relleno para no solaparse con el footer*/
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;  /* Separación */

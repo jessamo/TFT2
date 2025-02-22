@@ -13,7 +13,7 @@ body {
 /* Contenedor de las imágenes de los coches */
 .imagenes_ch {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 3 columnas iguales */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
     gap: 10px; /* Espacio entre imágenes */
     justify-items: center; /* Centrar imágenes horizontalmente */
     align-items: center; /* Alinear imágenes verticalmente */

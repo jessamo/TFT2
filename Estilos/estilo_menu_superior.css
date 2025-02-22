@@ -7,6 +7,7 @@
     height: 100px; /* Define una altura fija para el menú */
     width: 100%;
     background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%); /* Aplica un degradado como fondo */
+    z-index: 1000; /* Asegura que el header quede encima */
 }
 
 /* Estilos para la lista del menú */

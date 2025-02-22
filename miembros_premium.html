@@ -3,22 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo</title>
-    <link rel="stylesheet" href="Catálogo .css">
+    <title>Miembros Premium</title>
+    <link rel="stylesheet" href="Estilos/estilo_general.css">
+    <link rel="stylesheet" href="Estilos/estilo_menu_superior.css">
+    <link rel="stylesheet" href="Estilos/estilo_footer.css">
+    <link rel="stylesheet" href="Estilos/estilo_miembros_premium.css">
     <script src="https://kit.fontawesome.com/ba41d7ce0a.js" crossorigin="anonymous"></script>   <!--Font awesome para emoticonos-->
 </head>
 <body>
     <header>
-        <h1>Solo para miembros del club AutoDam</h1>
-        <div class="IconoCarrito"><i class="fa-solid fa-cart-shopping"></i></div>   <!-- Emoticono -->
+        <!--Según se vayan haciendo, cada div contendría el enlace para acceder a la página correspondiente-->
+        <nav id="menu_principal">
+            <ul id="menu_superior ">
+                <li class="indices_laterales"><a href="coches_historicos.html" title="Coches Históricos" target="_blank">Coches históricos</a></li>
+                <li class="indices_laterales"><a href="top_ventas.html" title="Top Ventas" target="_blank">Top ventas</a></li>
+                <li id="indice_central"><a href="index.html" title="Menú Principal" target="_self"><img src="Imagenes\Principal_img\Logo_def.png" alt="Logo AutoDam"></a></li>
+                <li class="indices_laterales"><a href="#">Los más deseados</a></li>
+                <li class="indices_laterales"><a href="miembros_premium.html" title="Miembros Premium" target="_blank">Miembros premium</a></li>
+            </ul>
+        </nav>
     </header>
+
 
     <div class="Contenedor-items">
 
         <!-- Coche1 -->
         <div class="item">
             <figure>
-                <img src="Batmovil.jpg" alt="Producto1">
+                <img src="Imagenes/Miembros_premium_img/Batmovil.jpg" alt="Producto1">
             </figure>
             <div class="InfoP">
                 <h2>Batmovil</h2>
@@ -30,7 +42,7 @@
         <!-- Coche2 -->
         <div class="item">
             <figure>
-                <img src="Lambo1.webp" alt="Producto1">
+                <img src="Imagenes/Miembros_premium_img/Lambo1.webp" alt="Producto1">
             </figure>
             <div class="InfoP">
                 <h2>Huracán STJ</h2>
@@ -42,7 +54,7 @@
         <!-- Coche3 -->
         <div class="item">
             <figure>
-                <img src="Dodge Charger.jpg" alt="Producto1">
+                <img src="Imagenes/Miembros_premium_img/Dodge Charger.jpg" alt="Producto1">
             </figure>
             <div class="InfoP">
                 <h2>Coche Patrulla</h2>
@@ -54,7 +66,7 @@
         <!-- Coche4 -->
         <div class="item">
             <figure>
-                <img src="Rayo-McQueen.jpg" alt="Producto1">
+                <img src="Imagenes/Miembros_premium_img/Rayo-McQueen.jpg" alt="Producto1">
             </figure>
             <div class="InfoP">
                 <h2>Rayo McQueen</h2>
@@ -66,7 +78,7 @@
         <!-- Coche5 -->
         <div class="item">
             <figure>
-                <img src="Vamtac.jpg" alt="Producto1">
+                <img src="Imagenes/Miembros_premium_img/Vamtac.jpg" alt="Producto1">
             </figure>
             <div class="InfoP">
                 <h2>Vamtac</h2>
@@ -78,7 +90,7 @@
         <!-- Coche6 -->
         <div class="item">
             <figure>
-                <img src="Jurassic car.jpg" alt="Producto1">
+                <img src="Imagenes/Miembros_premium_img/Jurassic car.jpg" alt="Producto1">
             </figure>
             <div class="InfoP">
                 <h2>Jurassic Car</h2>
@@ -90,7 +102,7 @@
         <!-- Coche7 -->
         <div class="item">
             <figure>
-                <img src="DeLorean.jpeg" alt="Producto1">
+                <img src="Imagenes/Miembros_premium_img/DeLorean.jpeg" alt="Producto1">
             </figure>
             <div class="InfoP">
                 <h2>DeLorean</h2>
@@ -102,7 +114,7 @@
         <!-- Coche8 -->
         <div class="item">
             <figure>
-                <img src="Optimus Prime.webp" alt="Producto1">
+                <img src="Imagenes/Miembros_premium_img/Optimus Prime.webp" alt="Producto1">
             </figure>
             <div class="InfoP">
                 <h2>Optimus Prime</h2>
@@ -114,7 +126,7 @@
         <!-- Coche9 -->
         <div class="item">
             <figure>
-                <img src="Rolls-Royce.jpg" alt="Producto1">
+                <img src="Imagenes/Miembros_premium_img/Rolls-Royce.jpg" alt="Producto1">
             </figure>
             <div class="InfoP">
                 <h2>Rolls-Royce</h2>
@@ -124,6 +136,13 @@
         </div>
 
     </div>
+
+    <footer>
+        <div class="pie-pagina">
+            <p>Estamos en: SAFA Tech Valladolid - Aula 11</p>
+            <p><a href="formulario.html" title="Formulario de Contacto" target="_blank">Contacta con nosotros</a></p>
+        </div>    
+    </footer>
 
 </body>
 </html>
