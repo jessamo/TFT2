@@ -50,7 +50,7 @@ img{
 .item img{
     width: 100%;
     height: 220px;
-    object-fit: cover; /* Se ajusta aunque pierda info en los bordes */
+    object-fit: cover; /* Se ajusta aunque pierda "info" en los bordes */
     border-radius: 10px 10px 0 0;   /* Solo bordes superiores */
 }
 

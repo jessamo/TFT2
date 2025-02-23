@@ -26,19 +26,24 @@ body {
     max-width: 300px; /* Tamaño máximo para uniformidad */
     height: 250px; /* Tamaño fijo para todas las imágenes */
     object-fit: cover; /* Recorta y ajusta la imagen manteniendo proporción */
-    border-radius: 10px; /* Opcional: esquinas redondeadas */
     transition: transform 0.3s ease-in-out; /* Suaviza la animación */
 }
 
 /* Contenedor de la información del producto (nombre, precio, botón de compra) */
 .info_producto{
     padding: 12 0 12 0;
+    text-align: center;
 }
 
 /* Contenedor individual para cada coche */
 .ficha_coche{
     background-color: grey;
     border-radius: 10px;
+}
+
+.ficha_coche figure{
+    overflow: hidden; /* Para que no sobresalga y tape cosas */
+    background-color:palevioletred; /* Aquí hay que meter el color que has puesto de fondo en los cohes  ------------------------ */   
 }
 
 
