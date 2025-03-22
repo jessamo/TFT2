@@ -9,8 +9,16 @@
 
 body{
     margin: 0 auto; /* Para que solo se centre de forma horizontal */
-    max-width: 1200px;
+    max-width: 1200px;  
     color: black;
+}
+
+/*Ajustamos el footer para que no se solape con el estilo del body*/
+header{
+    width: 100%; /* El menú ocupa todo el ancho */
+    position: fixed; /* Si deseas que el menú se quede fijo al hacer scroll */
+    top: 0;
+    left: 0;
 }
 
 /* ------------------------------------------------------------------------------------------------- */
