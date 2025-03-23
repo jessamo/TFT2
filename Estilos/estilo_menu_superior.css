@@ -20,6 +20,7 @@
     max-width: 100vw; /* Define un ancho máximo para las "celdas" del menú*/
     margin: 0;
     padding: 0;
+    overflow: hidden;   /* Para que nada sobresalga, ni al hacer hover */
 }
 
 /* Estilos de los elementos de la lista del menú */

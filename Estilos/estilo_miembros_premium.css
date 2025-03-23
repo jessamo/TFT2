@@ -1,24 +1,26 @@
-/* Generales */
+/* --------------------------------------------- Generales -----------------------------------------*/
 *::after, 
 *::before,      /* Se aplica tanto before como after */
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ancho y alto de un elemento incluyan padding y borde */
+    box-sizing: border-box; /* Para que ancho y alto de un elemento incluyan padding y borde */
 }
 
 body{
     margin: 0 auto; /* Para que solo se centre de forma horizontal */
     max-width: 1200px;  
     color: black;
+    background-color: rgb(77, 77, 77);
 }
 
-/*Ajustamos el footer para que no se solape con el estilo del body*/
+/*Ajustamos el menú para que no se solape con el estilo del body*/
 header{
     width: 100%; /* El menú ocupa todo el ancho */
     position: fixed; /* Si deseas que el menú se quede fijo al hacer scroll */
     top: 0;
     left: 0;
+    z-index: 1000; /* Para que esté por encima de todo */
 }
 
 /* ------------------------------------------------------------------------------------------------- */

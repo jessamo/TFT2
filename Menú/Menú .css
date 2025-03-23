@@ -84,11 +84,3 @@ li i{  /* Emotis */
 .drop-down:hover .drop-downContenido{   /* Haciendo hover en 1, se aplica a 2 */
     display: block; /* Lo transforma en bloques */
 }
-
-
-
-/* .punto{
-    margin-right: 10px;
-    font-size: 35px;
-    line-height: 0;
-} */

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Formulario con Menú</title>
+    
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/ba41d7ce0a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <!-- CSS formulario + CSS menú lateral -->
+    <link rel="stylesheet" href="Estilos/estilo_formularioMenuIzq.css">
+</head>
+<body>
+
+    <!-- Menú lateral izquierdo -->
+    <div class="slidebar">
+        <h2 class="tituloMenu">Menú</h2>
+        <ul class="menu">
+            <li><a href="#"><i class="fa-solid fa-house"></i><span class="texto">Inicio</span></a></li>
+            <li class="drop-down">
+                <a href="#"><i class="fa-solid fa-car"></i><span class="texto">Reservar coche</span><i class="fa-solid fa-caret-down"></i></a>
+                <ul class="drop-downContenido">
+                    <li class="punto"><a href="#">Históricos</a></li>
+                    <li class="punto"><a href="#">Top ventas</a></li>
+                    <li class="punto"><a href="#">Los más deseados</a></li>
+                    <li class="punto"><a href="#">Miembros premium</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fa-solid fa-calendar-days"></i><span class="texto">Agendar cita</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-screwdriver-wrench"></i><span class="texto">Mantenimiento y reparaciones</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-percent"></i><span class="texto">Promociones</span><span class="simbolito">3</span></a></li>
+        </ul>
+        <h2 class="tituloMenu">Otros</h2>
+        <ul class="menu">
+            <li><a href="#"><i class="fa-regular fa-circle-question"></i><span class="texto">Ayuda</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-circle-info"></i><span class="texto">Sobre nosotros</span></a></li>
+        </ul>
+    </div>
+
+    <!-- Formulario -->
+    <div class="ContenidoTotal" style="margin-left: 270px;">
+        <h1 class="TituloForm">Contacte con AUTO<span>DAM</span></h1>
+
+        <div class="ContenidoForm">
+            <div class="InputsForm">
+                <h1>Formulario de contacto</h1>
+                <form action="" method="post">
+                    <p>
+                        <label for="NombreCompleto">Nombre Completo:</label>
+                        <input type="text" name="NombreCompleto" id="NombreCompleto" required minlength="4" maxlength="50" pattern="^[A-Za-zÁáÉéÍíÓóÚúÑñ\s]+$" title="Solo se permiten letras y espacios">
+                    </p>
+                    <p>
+                        <label for="CorreoContacto">Correo electrónico:</label>
+                        <input type="email" name="CorreoContacto" id="CorreoContacto" required minlength="5" maxlength="50">
+                    </p>
+                    <p>
+                        <label for="TelContacto">Teléfono de contacto:</label>
+                        <input type="tel" name="TelContacto" id="TelContacto" pattern="^\+?[1-9]\d{1,14}$" title="Ingrese un número de teléfono válido (Ej. +34 123 456 789)">
+                    </p>
+                    <p>
+                        <label for="AsuntoForm">Asunto:</label>
+                        <input type="text" name="AsuntoForm" id="AsuntoForm" required minlength="5" maxlength="100" title="El asunto debe tener entre 5 y 100 caracteres">
+                    </p>
+                    <p class="ParteInferior">
+                        <label for="TextoForm">Detalles de su consulta:</label>
+                        <textarea name="TextoForm" id="TextoForm" rows="3" required minlength="10" maxlength="500" title="Ingrese al menos 10 caracteres"></textarea>
+                    </p>
+                    <p class="ParteInferior">
+                        <button type="submit">Enviar</button>
+                    </p>
+                </form>
+            </div>
+            <div class="InfoForm">
+                <h1>Información adicional:</h1>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i><p><a href="https://g.co/kgs/rVi9p41" target="_blank">Valladolid, C. del Arca Real 146.</a></p></li>
+                    <li><i class="fa-solid fa-phone"></i><p><a href="tel:+64608990220" target="_blank">+64 608 99 02 20</a></p></li>
+                    <li><i class="fa-solid fa-envelope"></i><p><a href="mailto:info@fpsafavalladolid.com" target="_blank">info@fpsafavalladolid.com</a></p></li>
+                    <p class="explicacion">Si tiene alguna consulta, no dude en comunicárnosla a través de este formulario. 
+                        Estaremos encantados de atender sus preguntas sobre envíos, horarios, vehículos, 
+                        disponibilidad, catálogo y cualquier otro aspecto en el que podamos asistirle.</p>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

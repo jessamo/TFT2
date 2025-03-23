@@ -5,7 +5,7 @@ body {
     height: 100%; /* Asegura que ocupe todo el alto disponible */
     min-height: 100vh; /* Garantiza que al menos ocupe toda la pantalla */
     margin: 0; /* Elimina los márgenes por defecto */
-    background-color: #778899;
+    background-color: rgb(77, 77, 77);
     /*overflow: hidden;*/ /* Evita que el contenido adicional genere scroll */
 }
 
