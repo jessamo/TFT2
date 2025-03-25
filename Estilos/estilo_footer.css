@@ -14,6 +14,7 @@
     color: white;
 }
 
+<<<<<<< HEAD
 /* Contenedor del footer */
 #footer_contenedor {
     display: flex;
@@ -48,6 +49,8 @@
     font-weight: bold;
     font-size: 12px; 
 }
+=======
+>>>>>>> 97eca2dece2f0c38305fc1e0d16c2fb9513d09a8
 
 #footer_contacto_enlace:hover {
     color: #ffeb3b; 
