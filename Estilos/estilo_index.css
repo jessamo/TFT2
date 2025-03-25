@@ -1,42 +1,49 @@
-/* Estilos generales del body para asegurar que ocupe toda la pantalla y tenga un diseño flexible */
+/*Estilos generales del body*/
 body {
-    display: flex; /* Usa flexbox para organizar los elementos */
-    flex-direction: column; /* Acomoda los elementos en columna */
-    height: 100%; /* Asegura que ocupe todo el alto disponible */
-    min-height: 100vh; /* Garantiza que al menos ocupe toda la pantalla */
-    margin: 0; /* Elimina los márgenes por defecto */
-    overflow: hidden; /* Evita que el contenido adicional genere scroll */
+    display: flex; /*Usa flexbox para organizar los elementos*/
+    flex-direction: column; /*Acomoda los elementos en columna*/
+    height: 100%; 
+    min-height: 100vh; 
+    margin: 0; 
+    overflow: hidden; /*Evita que el contenido adicional genere scroll*/
 }
 
+/*Letra del menú superior para que mantenga la uniformidad*/
+#menu_principal ul li a{
+    color: #00BFFF;
+    font-weight: bold;
+    font-size: 22px;
 
-/* Estilos para la sección de presentación */
+}
+
+/*Estilos para la sección de presentación*/
 #presentacion {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centrado verticalmente */
-    align-items: center; /* Centrado horizontalmente */
+    justify-content: center; 
+    align-items: center; 
     text-align: center;
     height: 100vh; /* Ocupar toda la pantalla */
     font-size: larger;
-    background-image: url("../Imagenes/Principal_img/nsx-honda.gif"); /* Gif como fondo de pantalla */
-    background-size: cover; /* Ajusta el tamaño del GIF */
-    background-position: center; /* Centrar el GIF */
-    background-repeat: no-repeat; /* Evitar que se repita */
+    background-image: url("../Imagenes/Principal_img/nsx-honda.gif"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
     background-color: #778899; /*Color supletorio de fondo por si el gif falla*/
     gap: 10px; /* Espaciado entre elementos */
-    padding-top: 50px; /* Ajusta manualmente la altura */
+    padding-top: 50px; 
 }
 
-/* Ajusta la posición del texto dentro de la presentación */
+/*Ajusta la posición del texto dentro de la presentación*/
 #presentacion p {
     font-size: 60px;
     margin-top: -100px;
     font-weight: bold;
     text-shadow: 
-    0 0 5px blue,   /* Capa de luz suave */
+    0 0 5px blue,   /*Capas de luz */
     0 0 10px blue,  
     0 0 20px blue,  
-    0 0 40px blue,   /* Capa más intensa */
+    0 0 40px blue,   
     0 0 80px blue,   
     0 0 90px blue;
 }

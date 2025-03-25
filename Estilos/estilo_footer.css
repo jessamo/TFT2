@@ -1,4 +1,4 @@
-/* Estilos para el footer */
+/*Estilos para el footer*/
 #footer_principal {
     position: fixed;
     bottom: 0;
@@ -14,7 +14,7 @@
     color: white;
 }
 
-/* Contenedor del footer */
+/*Contenedor del footer*/
 #footer_contenedor {
     display: flex;
     flex-direction: column;
@@ -25,26 +25,26 @@
     padding: 0;
 }
 
-/* Estilos para los textos */
+/*Estilos para los textos*/
 #footer_ubicacion,
 #footer_contacto {
     display: flex;
     align-items: center;
-    gap: 1px; /* Reducir espaciado entre icono y texto */
+    gap: 1px; /*Reducir espaciado entre icono y texto*/
     margin: 0; 
     padding: 0;
-    line-height: 1; /* Asegurar que no haya espacios adicionales */
+    line-height: 1; /*Asegurar que no haya espacios adicionales*/
 }
 
-/* Estilos para los iconos */
+/*Estilos para los iconos*/
 .icon {
     font-size: 14px; 
 }
 
-/* Estilos para enlaces */
+/*Estilos para enlaces*/
 #footer_contacto_enlace {
     text-decoration: none;
-    color: #ffc107; 
+    color: #00BFFF; 
     font-weight: bold;
     font-size: 12px; 
 }

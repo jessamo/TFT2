@@ -1,68 +1,70 @@
-/* Estilos para el menú principal */
+/*Estilos para el menú principal*/
 #menu_principal {
     position: fixed;
     display: flex;
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    height: 100px; /* Define una altura fija para el menú */
+    justify-content: center; 
+    align-items: center; 
+    height: 100px; 
     width: 100%;
-    background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%); /* Aplica un degradado como fondo */
-    z-index: 1000; /* Asegura que el header quede encima */
+    background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%); /*Aplica un degradado como fondo*/
+    z-index: 1000; /*Asegura que el header quede encima*/
 }
 
-/* Estilos para la lista del menú */
+/*Estilos para la lista del menú*/
 #menu_principal ul {
-    display: flex; /* Usa flexbox */
-    justify-content: space-evenly; /* Distribuye los elementos de manera uniforme */
-    align-items: center; /* Centra verticalmente */
-    list-style: none; /* Elimina los estilos predeterminados de lista */
+    display: flex; 
+    justify-content: space-evenly; /*Distribuye los elementos de manera uniforme*/
+    align-items: center; 
+    list-style: none; 
     width: 100%;
-    max-width: 100vw; /* Define un ancho máximo para las "celdas" del menú*/
+    max-width: 100vw; /*Define un ancho máximo para las "celdas" del menú*/
     margin: 0;
     padding: 0;
-    overflow: hidden;   /* Para que nada sobresalga, ni al hacer hover */
+    overflow: hidden;   /*Para que nada sobresalga, ni al hacer hover*/
 }
 
-/* Estilos de los elementos de la lista del menú */
+/*Estilos de los elementos de la lista del menú*/
 #menu_principal ul li {
-    flex: 1; /* Hace que los elementos ocupen el mismo espacio */
+    flex: 1; /*Hace que los elementos ocupen el mismo espacio*/
     text-align: center;
-    min-width: 150px; /* Define un ancho mínimo */
-    height: 100%; /* Asegura que tengan la misma altura que el menú */
-    display: flex; /* Permite que el contenido crezca con su contenedor */
+    min-width: 150px; 
+    height: 100%; 
+    display: flex; 
     align-items: center;
     justify-content: center;
-    transition: transform 0.2s ease, font-size 0.2s ease; /* Agrega efectos de animación */
+    transition: transform 0.2s ease, font-size 0.2s ease; /*Agrega efectos de animación*/
 }
 
-/* Estilos específicos para los elementos laterales del menú */
+/*Estilos específicos para los elementos laterales del menú*/
 #menu_principal ul li.indices_laterales {
-    padding: 15px 25px; /* Espaciado interno para mayor separación */
-    font-size: 20px;  /* Aumenta el tamaño de la fuente */
+    padding: 15px 25px; 
+    font-size: 20px;  
 }
 
-/* Estilos para los enlaces dentro del menú */
+/*Estilos para los enlaces dentro del menú*/
 #menu_principal a {
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    text-decoration: none; 
     display: flex;
     width: 100%;
     height: 100%;
     align-items: center;
     justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
 }
 
-/* Estilos para las imágenes dentro del menú */
+/*Estilos para las imágenes dentro del menú*/
 #menu_principal a img {
     padding: 0%;
     margin: 0%;
-    height: 100px;  /* La imagen tomará la altura del contenedor */
-    width: auto;   /* Mantiene la proporción */
-    object-fit: contain; /* Usa 'cover' si prefieres que llene todo el espacio */
+    height: 100px;  /*La imagen tomará la altura del contenedor*/
+    width: auto;   /*Mantiene la proporción*/
+    object-fit: contain; 
     display: block;
 }
 
 
-/* Efecto al pasar el cursor sobre los elementos del menú */
+/*Efecto al pasar el cursor sobre los elementos del menú*/
 #menu_principal ul li:hover {
-    transform: scale(1.1); /* Hace que crezca un poco */
+    transform: scale(1.1); 
 }
