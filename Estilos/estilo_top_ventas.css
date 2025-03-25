@@ -87,7 +87,8 @@ body {
 }
 
 .car1:hover, .car2:hover, .car3:hover, .car4:hover, .car5:hover, .car6:hover {
-    background-color: #92e3db;
+    background-color: #1d2641;
+    color: #fff;
 }
 
 .car1:hover p, .car2:hover p, .car3:hover p, .car4:hover p, .car5:hover p, .car6:hover p {
