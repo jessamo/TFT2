@@ -14,6 +14,10 @@ body{
     background-color: rgb(77, 77, 77);
 }
 
+a{
+    text-decoration: none;
+}
+
 /*Ajustamos el menú para que no se solape con el estilo del body*/
 header{
     width: 100%; /* El menú ocupa todo el ancho */
@@ -26,7 +30,7 @@ header{
 /* ------------------------------------------------------------------------------------------------- */
 
 img{
-    max-width: 100%;    /* Para que no se desborde */
+    max-width: 100%;    
     cursor: pointer;
 }
 

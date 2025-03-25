@@ -1,6 +1,6 @@
 /* General */
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; /*  El padding y el borde se incluyen dentro del ancho y alto definidos. */
 }
 body {
     margin: 0;
@@ -23,18 +23,22 @@ body {
     overflow-x: hidden;
     transition: transform 0.3s;
 }
+
 .tituloMenu {
     color: antiquewhite;
     margin-bottom: 15px;
     font-size: 12px;
 }
+
 .menu {
     padding: 0;
     list-style-type: none;
 }
+
 .menu li {
     margin-bottom: 10px;
 }
+
 .menu li a {
     display: flex;
     align-items: center;
@@ -42,18 +46,22 @@ body {
     color: white;
     padding: 10px 8px;
     border-radius: 8px;
-    transition: background 0.3s;
+    transition: 0.3s;
 }
+
 .menu li a:hover {
     background-color: grey;
 }
+
 li i {
     margin-right: 15px;
     font-size: 18px;
 }
+
 .texto {
-    flex-grow: 1;
+    flex-grow: 1;   /* Crece y se reparte el espacio, se queda con 1 parte (puede haber más elementos con flex-grow) */
 }
+
 .simbolito {
     background-color: red;
     color: white;
@@ -61,11 +69,13 @@ li i {
     border-radius: 12px;
     font-size: 12px;
 }
-.drop-downContenido {
+
+.drop-downContenido {   /* Desplegable */
     display: none;
     padding-left: 35px;
     list-style-type: none;
 }
+
 .drop-downContenido li a {
     padding: 8px 10px;
     font-size: 14px;
@@ -73,9 +83,11 @@ li i {
     display: flex;
     align-items: center;
 }
+
 .drop-downContenido li a:hover {
     color: white;
 }
+
 .drop-down:hover .drop-downContenido {
     display: block;
 }
@@ -83,7 +95,7 @@ li i {
 /* --------------------------------- Formulario --------------------------------- */
 .ContenidoTotal {
     max-width: 1170px;
-    margin: 0 auto;
+    margin-left: 400px;
     padding: 1.5em;
 }
 .TituloForm {
@@ -102,8 +114,8 @@ li i {
     padding: 2em;
 }
 textarea {
-    resize: none;
-    height: calc(1.5em * 8);
+    resize: none;   /* Para que no se pueda redimensionar y quede feo */
+    height: calc(1.5em * 8); /* Calcula para que ocupe 8 lineas de texto */
 }
 .InputsForm {
     background-color: rgb(49, 48, 48);
@@ -128,7 +140,7 @@ textarea {
     border: none;
     background: none;
     border-bottom: 1px solid deepskyblue;
-    outline: none;
+    outline: none;  /* Quita el borde */
 }
 .InputsForm form button {
     background-color: deepskyblue;

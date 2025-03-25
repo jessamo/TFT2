@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     
     <!-- CSS formulario + CSS menú lateral -->
-    <link rel="stylesheet" href="Estilos/estilo_formularioMenuIzq.css">
+    <link rel="stylesheet" href="Estilos/estilo_formulario_menu_izq.css">
 </head>
 <body>
 
@@ -18,14 +18,14 @@
     <div class="slidebar">
         <h2 class="tituloMenu">Menú</h2>
         <ul class="menu">
-            <li><a href="#"><i class="fa-solid fa-house"></i><span class="texto">Inicio</span></a></li>
+            <li><a href="index.html" target="Inicio"><i class="fa-solid fa-house"></i><span class="texto">Inicio</span></a></li>
             <li class="drop-down">
                 <a href="#"><i class="fa-solid fa-car"></i><span class="texto">Reservar coche</span><i class="fa-solid fa-caret-down"></i></a>
                 <ul class="drop-downContenido">
-                    <li class="punto"><a href="#">Históricos</a></li>
-                    <li class="punto"><a href="#">Top ventas</a></li>
-                    <li class="punto"><a href="#">Los más deseados</a></li>
-                    <li class="punto"><a href="#">Miembros premium</a></li>
+                    <li class="punto"><a href="coches_historicos.html" target="Históricos">Históricos</a></li>  <!-- Ese target evita que se abra una nueva si ya está abierta -->
+                    <li class="punto"><a href="top_ventas.html" target="Top ventas">Top ventas</a></li>
+                    <li class="punto"><a href="#" target="Más deseados">Los más deseados</a></li>
+                    <li class="punto"><a href="miembros_premium.html" target="Premium">Miembros premium</a></li>
                 </ul>
             </li>
             <li><a href="#"><i class="fa-solid fa-calendar-days"></i><span class="texto">Agendar cita</span></a></li>
@@ -40,7 +40,7 @@
     </div>
 
     <!-- Formulario -->
-    <div class="ContenidoTotal" style="margin-left: 270px;">
+    <div class="ContenidoTotal">
         <h1 class="TituloForm">Contacte con AUTO<span>DAM</span></h1>
 
         <div class="ContenidoForm">
@@ -75,7 +75,7 @@
             <div class="InfoForm">
                 <h1>Información adicional:</h1>
                 <ul>
-                    <li><i class="fa-solid fa-location-dot"></i><p><a href="https://g.co/kgs/rVi9p41" target="_blank">Valladolid, C. del Arca Real 146.</a></p></li>
+                    <li><i class="fa-solid fa-location-dot"></i><p><a href="https://maps.app.goo.gl/ZEnsbubsboGk9E9g6?g_st=iw" target="_blank">Valladolid, C. del Arca Real 146.</a></p></li>
                     <li><i class="fa-solid fa-phone"></i><p><a href="tel:+64608990220" target="_blank">+64 608 99 02 20</a></p></li>
                     <li><i class="fa-solid fa-envelope"></i><p><a href="mailto:info@fpsafavalladolid.com" target="_blank">info@fpsafavalladolid.com</a></p></li>
                     <p class="explicacion">Si tiene alguna consulta, no dude en comunicárnosla a través de este formulario. 
