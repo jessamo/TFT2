@@ -1,104 +1,105 @@
 .Titulo {
-    text-align: center;
-    font-size: 3em;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    margin: 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 500;
-    font-style: normal;
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 3em; /* Tamaño de fuente grande */
+    color: #fff; /* Color del texto blanco */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente negro */
+    padding: 20px; /* Espaciado interno */
+    margin: 0; /* Sin margen externo */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    font-weight: 500; /* Grosor medio del texto */
+    font-style: normal; /* Estilo de fuente normal */
 }
 
 body {
-    background-color: rgb(77, 77, 77);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin: 0;
-    padding: 0;
+    background-color: rgb(77, 77, 77); /* Color de fondo gris oscuro */
+    background-size: cover; /* La imagen de fondo cubre todo el área */
+    background-repeat: no-repeat; /* No repite la imagen de fondo */
+    background-attachment: fixed; /* Fija la imagen de fondo al viewport */
+    margin: 0; /* Sin margen externo */
+    padding: 0; /* Sin relleno interno */
 }
-
 
 .car-container1, .car-container2 {
-    display: flex;
-    justify-content: center;
-    gap: 50px; /* Reduce the gap between containers */
-    flex-wrap: wrap;
-    padding: 5px; /* Reduce the padding */
+    display: flex; /* Usa flexbox para organizar los elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 50px; /* Espaciado entre los contenedores */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
+    padding: 5px; /* Espaciado interno reducido */
 }
 
-/*Margen superior para que no se solape con el header*/
-.car1, .car2, .car3{
-    margin-top: 140px;
+/* Margen superior para evitar solaparse con el header */
+.car1, .car2, .car3 {
+    margin-top: 140px; /* Espaciado superior */
 }
 
-/*Margen para no solaparse con el footer*/
-.car4, .car5, .car6{
-    margin-bottom: 80px;   
+/* Margen inferior para evitar solaparse con el footer */
+.car4, .car5, .car6 {
+    margin-bottom: 80px; /* Espaciado inferior */
 }
 
 .car1, .car2, .car3, .car4, .car5, .car6 {
-    --b: 4px;
-    --l: #0000 0% 70%, #0000ff7f;
-    --f: url(#glow-0);
-    border: solid var(--b) #0000;
-    border-radius: calc(2*var(--b));
-    padding: 10px; /* Reduce the padding */
-    width: 250px; /* Reduce the width */
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    background-color: transparent;
-    transition: background-color 0.3s;
+    --b: 4px; /* Grosor del borde */
+    --l: #0000 0% 70%, #0000ff7f; /* Gradiente de color */
+    --f: url(#glow-0); /* Filtro de animación */
+    border: solid var(--b) #0000; /* Borde transparente */
+    border-radius: calc(2*var(--b)); /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno reducido */
+    width: 250px; /* Ancho reducido */
+    text-align: center; /* Centra el texto */
+    position: relative; /* Posicionamiento relativo */
+    overflow: hidden; /* Oculta contenido desbordado */
+    background-color: transparent; /* Fondo transparente */
+    transition: background-color 0.3s; /* Transición suave del fondo */
     background: 
         repeating-conic-gradient(from var(--a, 0deg), 
-                var(--l, #0000 0% 70%, #0000ff7f)) border-box;
-    filter: var(--f, url(#glow-0));
-    animation: a 2s linear infinite;
+                var(--l, #0000 0% 70%, #0000ff7f)) border-box; /* Fondo con gradiente cónico */
+    filter: var(--f, url(#glow-0)); /* Filtro de animación */
+    animation: a 2s linear infinite; /* Animación infinita */
 }
 
 @property --a {
-    syntax: '<angle>';
-    initial-value: 0deg;
-    inherits: false;
+    syntax: '<angle>'; /* Define un ángulo */
+    initial-value: 0deg; /* Valor inicial del ángulo */
+    inherits: false; /* No hereda el valor */
 }
 
-@keyframes a { to { --a: 1turn } }
+@keyframes a { 
+    to { --a: 1turn } /* Define la animación de rotación completa */
+}
 
 .car1 img, .car2 img, .car3 img, .car4 img, .car5 img, .car6 img {
-    box-sizing: border-box;
-    width: 100%;
-    aspect-ratio: 1;
-    object-fit: cover;
-    border-radius: 10px;
+    box-sizing: border-box; /* Incluye el borde en el tamaño total */
+    width: 100%; /* Ancho completo del contenedor */
+    aspect-ratio: 1; /* Relación de aspecto cuadrada */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+    border-radius: 10px; /* Bordes redondeados */
 }
 
 .car1 p, .car2 p, .car3 p, .car4 p, .car5 p, .car6 p {
-    opacity: 0;
-    transition: opacity 0.3s, max-height 0.3s;
-    max-height: 0;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
+    opacity: 0; /* Texto invisible por defecto */
+    transition: opacity 0.3s, max-height 0.3s; /* Transición suave */
+    max-height: 0; /* Altura máxima inicial cero */
+    overflow: hidden; /* Oculta contenido desbordado */
+    margin: 0; /* Sin margen externo */
+    padding: 0; /* Sin relleno interno */
 }
 
 .car1:hover, .car2:hover, .car3:hover, .car4:hover, .car5:hover, .car6:hover {
-    background-color: #1d2641;
-    color: #fff;
+    background-color: #1d2641; /* Cambia el fondo al pasar el mouse */
+    color: #fff; /* Cambia el color del texto al pasar el mouse */
 }
 
 .car1:hover p, .car2:hover p, .car3:hover p, .car4:hover p, .car5:hover p, .car6:hover p {
-    opacity: 1;
-    max-height: 500px;
-    padding: 10px;
+    opacity: 1; /* Hace visible el texto al pasar el mouse */
+    max-height: 500px; /* Aumenta la altura máxima */
+    padding: 10px; /* Añade relleno interno */
 }
 
 .car1 a, .car2 a, .car3 a, .car4 a, .car5 a, .car6 a {
-    text-decoration: none;
-    color: inherit;
-    display: block;
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    color: inherit; /* Hereda el color del texto */
+    display: block; /* Hace que el enlace ocupe todo el bloque */
 }

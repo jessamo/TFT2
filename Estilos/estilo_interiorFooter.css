@@ -1,17 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,600;1,200;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,600;1,200;1,400&display=swap"); /* Importa la fuente desde Google Fonts */
 
 * {
-    font-family: "Be Vietnam Pro", serif;
-    color: #00BFFF;
+    font-family: "Be Vietnam Pro", serif; /* Aplica la fuente a todos los elementos */
+    color: #00BFFF; /* Color de texto predeterminado */
 }
 
 /* Asegurar que el contenido empuje el footer hacia abajo */
 html, body {
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
+    min-height: 100vh; /* Altura mínima de la página */
+    margin: 0; /* Elimina márgenes */
+    padding: 0; /* Elimina relleno */
+    display: flex; /* Usa flexbox para el diseño */
+    flex-direction: column; /* Coloca los elementos en columna */
 }
 
 .main-content {
@@ -20,48 +20,48 @@ html, body {
 
 /* Footer que solo se ve al hacer scroll */
 footer {
-    background: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: static; /* Se coloca al final del documento */
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    border-top: 3px solid #34495e;
+    background: #2c3e50; /* Fondo del footer */
+    color: white; /* Color del texto del footer */
+    text-align: center; /* Centra el texto */
+    padding: 20px 0; /* Espaciado interno del footer */
+    position: static; /* Posición predeterminada del footer */
+    bottom: 0; /* Alinea el footer al fondo */
+    left: 0; /* Alinea el footer a la izquierda */
+    width: 100%; /* Ancho completo del footer */
+    height: auto; /* Altura automática */
+    border-top: 3px solid #34495e; /* Borde superior del footer */
 }
 
 .footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 2100px;
-    margin: auto;
-    padding: 10px 20px;
+    display: flex; /* Usa flexbox para el contenido del footer */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    max-width: 2100px; /* Ancho máximo del contenido */
+    margin: auto; /* Centra el contenido */
+    padding: 10px 20px; /* Espaciado interno */
 }
 
 /* Ubicación */
 .footer-location {
-    flex: 1;
-    text-align: left;
-    font-size: 14px;
-    color: #bdc3c7;
+    flex: 1; /* Ocupa el espacio disponible */
+    text-align: left; /* Alinea el texto a la izquierda */
+    font-size: 14px; /* Tamaño de fuente */
+    color: #bdc3c7; /* Color del texto */
 }
 
 /* Logo en el centro */
 .footer-logo {
-    flex: 0 1 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    flex: 0 1 auto; /* Tamaño flexible del logo */
+    display: flex; /* Usa flexbox para el logo */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    position: relative; /* Posición relativa */
 }
 
 .footer-logo img {
-    max-width: 150px;
-    height: auto;
-    transition: transform 0.3s ease;
+    max-width: 150px; /* Ancho máximo del logo */
+    height: auto; /* Altura automática */
+    transition: transform 0.3s ease; /* Transición suave al escalar */
 }
 
 /* Solo cuando el ratón está encima */
@@ -71,65 +71,65 @@ footer {
 
 /* Redes sociales y formulario de contacto */
 .footer-right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    flex: 1;
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: flex-end; /* Alinea los elementos a la derecha */
+    flex: 1; /* Ocupa el espacio disponible */
 }
 
 /* Redes sociales */
 .footer-social {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra los elementos */
+    gap: 10px; /* Espaciado entre elementos */
 }
 
 .social-icons {
-    display: flex;
-    gap: 15px;
+    display: flex; /* Usa flexbox */
+    gap: 15px; /* Espaciado entre íconos */
 }
 
 .social-icons a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #34495e;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s ease, background 0.3s ease;
+    display: flex; /* Usa flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    background: #34495e; /* Fondo de los íconos */
+    border-radius: 50%; /* Forma circular */
+    width: 40px; /* Ancho del ícono */
+    height: 40px; /* Altura del ícono */
+    transition: transform 0.3s ease, background 0.3s ease; /* Transición suave */
 }
 
 .social-icons a:hover {
-    transform: scale(1.1);
-    background: #3498db;
+    transform: scale(1.1); /* Aumenta el tamaño del ícono */
+    background: #3498db; /* Cambia el color de fondo */
 }
 
 .social-icons img {
-    width: 24px;
-    height: 24px;
+    width: 24px; /* Ancho de la imagen del ícono */
+    height: 24px; /* Altura de la imagen del ícono */
 }
 
 /* Formulario de contacto */
 .footer-contact {
-    text-align: center;
-    margin-top: 10px;
+    text-align: center; /* Centra el texto */
+    margin-top: 10px; /* Espaciado superior */
 }
 
 .contact-link {
-    color: #ecf0f1;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-    display: inline-block;
-    padding: 8px 15px;
-    border: 2px solid #ecf0f1;
-    border-radius: 8px;
+    color: #ecf0f1; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    transition: color 0.3s ease; /* Transición suave del color */
+    display: inline-block; /* Elemento en línea con bloque */
+    padding: 8px 15px; /* Espaciado interno */
+    border: 2px solid #ecf0f1; /* Borde del enlace */
+    border-radius: 8px; /* Bordes redondeados */
 }
 
 .contact-link:hover {
-    color: #3498db;
-    background: #ecf0f1;
+    color: #3498db; /* Cambia el color del texto */
+    background: #ecf0f1; /* Cambia el fondo */
 }
