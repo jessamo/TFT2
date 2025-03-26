@@ -9,6 +9,13 @@ body {
     /*overflow: hidden; /*Evita que el contenido adicional genere scroll*/
 }
 
+/*Letra del menú superior para que mantenga la uniformidad*/
+#menu_principal ul li a{
+    color: #00BFFF;
+    font-weight: bold;
+    font-size: 22px;
+}
+
 
 /*Contenedor de las imágenes de los coches*/
 .imagenes_ch {
@@ -36,6 +43,14 @@ body {
     text-align: center;
 }
 
+.info_producto h2{
+    color: #00BFFF;
+}
+
+.precio{
+    color: #00BFFF;
+}
+
 .ficha_coche button{
     border-radius: 4px;
     border: solid #00BFFF 2px;
@@ -43,6 +58,10 @@ body {
     margin: 5px 0 5px 0;
     padding: 5px 8px 5px 8px;
     font-weight: bold;
+}
+
+.ficha_coche button a{
+    color: #00BFFF;
 }
 
 

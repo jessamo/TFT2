@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,600;1,200;1,400&display=swap");
+
 /* --------------------------------------------- Generales -----------------------------------------*/
 *::after, 
 *::before,      /* Se aplica tanto before como after */
@@ -11,6 +13,14 @@ body {
     margin: 0;
     color: black;
     background-color: rgb(77, 77, 77);
+}
+
+/*Letra del menú superior para que mantenga la uniformidad*/
+#menu_principal ul li a{
+    font-family: "Be Vietnam Pro", serif;
+    color: #00BFFF;
+    font-weight: bold;
+    font-size: 22px;
 }
 
 .Contenedor-items{

@@ -22,6 +22,12 @@ body {
     padding: 0;
 }
 
+/*Letra del menú superior para que mantenga la uniformidad*/
+#menu_principal ul li a{
+    color: #00BFFF;
+    font-weight: bold;
+    font-size: 22px;
+}
 
 .car-container1, .car-container2 {
     display: flex;

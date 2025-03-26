@@ -12,6 +12,13 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/*Letra del menú superior para que mantenga la uniformidad*/
+#menu_principal ul li a{
+    color: #00BFFF;
+    font-weight: bold;
+    font-size: 22px;
+}
+
 /* Ajuste del contenedor para permitir que se expanda */
 .car-container1, .car-container2 {
     display: flex;
