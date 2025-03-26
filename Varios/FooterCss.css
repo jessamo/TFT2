@@ -1,30 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,600;1,200;1,400&display=swap");
 
-.footer-content * {
+* {
     font-family: "Be Vietnam Pro", serif;
     color: #00BFFF;
 }
 
-/* Asegurar que el contenido empuje el footer hacia abajo */
-html, body {
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-.main-content {
-    flex: 1; /* Hace que el contenido ocupe el espacio disponible */
-}
-
-/* Footer que solo se ve al hacer scroll */
 footer {
     background: #2c3e50;
     color: white;
     text-align: center;
     padding: 20px 0;
-    position: static; /* Se coloca al final del documento */
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
