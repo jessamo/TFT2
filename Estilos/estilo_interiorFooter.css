@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,600;1,200;1,400&display=swap"); /* Importa la fuente desde Google Fonts */
 
+/* Estilos generales */
 * {
     font-family: "Be Vietnam Pro", serif; /* Aplica la fuente a todos los elementos */
     color: #00BFFF; /* Color de texto predeterminado */
+
+.footer-content * {
+    font-family: "Be Vietnam Pro", serif;
+    color: #00BFFF;
+
 }
 
 /* Asegurar que el contenido empuje el footer hacia abajo */

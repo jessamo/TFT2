@@ -7,7 +7,13 @@
     box-sizing: border-box; /* Para que ancho y alto de un elemento incluyan padding y borde */
 }
 
-body{
+body {
+    margin: 0;
+    color: black;
+    background-color: rgb(77, 77, 77);
+}
+
+.Contenedor-items{
     margin: 0 auto; /* Para que solo se centre de forma horizontal */
     max-width: 1200px;  
     color: black;
@@ -16,15 +22,6 @@ body{
 
 a{
     text-decoration: none;
-}
-
-/*Ajustamos el menú para que no se solape con el estilo del body*/
-header{
-    width: 100%; /* El menú ocupa todo el ancho */
-    position: fixed; /* Si deseas que el menú se quede fijo al hacer scroll */
-    top: 0;
-    left: 0;
-    z-index: 1000; /* Para que esté por encima de todo */
 }
 
 /* ------------------------------------------------------------------------------------------------- */
@@ -36,7 +33,7 @@ img{
 
 .Contenedor-items{
     padding-top: 140px;     /*Relleno para no solaparse con el menú superior*/
-    padding-bottom: 80px;   /*Relleno para no solaparse con el footer*/
+    padding-bottom: 40px;   /*Relleno para no solaparse con el footer*/
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;  /* Separación */
