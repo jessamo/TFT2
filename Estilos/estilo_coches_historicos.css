@@ -6,7 +6,7 @@ body {
     min-height: 100vh; 
     margin: 0; 
     background-color: rgb(77, 77, 77);
-    /*overflow: hidden; /*Evita que el contenido adicional genere scroll*/
+    overflow: hidden; /*Evita que el contenido adicional genere scroll*/
 }
 
 /*Letra del menú superior para que mantenga la uniformidad*/
@@ -72,8 +72,8 @@ body {
 }
 
 .ficha_coche figure{
-    overflow: hidden; /* Para que no sobresalga y tape cosas */
-    background-color:#5c7499; /* Aquí hay que meter el color que has puesto de fondo en los cohes  ------------------------ */   
+    overflow: hidden; /*Para que no sobresalga y tape otros elementos */
+    background-color:#5c7499;   
 }
 
 
